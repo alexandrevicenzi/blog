@@ -1,0 +1,3 @@
+[submodule "pelican-svbhack"]
+	path = pelican-svbhack
+	url = git@github.com:gfidente/pelican-svbhack.git
