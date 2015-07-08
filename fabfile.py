@@ -61,5 +61,6 @@ def publish():
     """Publish to GitHub Pages"""
     clean()
     local('pelican -s publishconf.py')
+    local('echo blog.alexandrevicenzi.com > {deploy_path}/CNAME'.format(**env))
     local("ghp-import -b {github_pages_branch} {deploy_path}".format(**env))
     local("git push origin {github_pages_branch}".format(**env))
