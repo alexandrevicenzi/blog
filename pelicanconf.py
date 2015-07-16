@@ -5,7 +5,7 @@ from __future__ import unicode_literals
 
 AUTHOR = u'Alexandre Vicenzi'
 SITENAME = u"Alexandre's Blog"
-SITEURL = '/'
+SITEURL = ''
 TAGLINE = 'Systems Analyst - Maker'
 USER_LOGO_URL = '//alexandrevicenzi.com/img/profile.png'
 
@@ -35,6 +35,23 @@ SOCIAL = (('Linkedin', 'https://br.linkedin.com/in/alexandrevicenzi/en'),
           ('GitHub', 'https://github.com/alexandrevicenzi'),)
 
 DEFAULT_PAGINATION = 10
+
+PLUGIN_PATHS = ['./pelican-plugins']
+PLUGINS = ['sitemap']
+
+SITEMAP = {
+    'format': 'xml',
+    'priorities': {
+        'articles': 0.6,
+        'indexes': 0.6,
+        'pages': 0.5
+    },
+    'changefreqs': {
+        'articles': 'monthly',
+        'indexes': 'daily',
+        'pages': 'monthly'
+    }
+}
 
 # Uncomment following line if you want document-relative URLs when developing
 #RELATIVE_URLS = True
