@@ -1,5 +1,4 @@
 from fabric.api import *
-import fabric.contrib.project as project
 import os
 import shutil
 import sys
@@ -17,24 +16,29 @@ env.github_pages_branch = "gh-pages"
 # Port for `serve`
 PORT = 8000
 
+
 def clean():
     """Remove generated files"""
     if os.path.isdir(DEPLOY_PATH):
         shutil.rmtree(DEPLOY_PATH)
         os.makedirs(DEPLOY_PATH)
 
+
 def build():
     """Build local version of site"""
     local('pelican -s pelicanconf.py')
+
 
 def rebuild():
     """`clean` then `build`"""
     clean()
     build()
 
+
 def regenerate():
     """Automatically regenerate site upon file modification"""
     local('pelican -r -s pelicanconf.py')
+
 
 def serve():
     """Serve site at http://localhost:8000/"""
@@ -48,14 +52,17 @@ def serve():
     sys.stderr.write('Serving on port {0} ...\n'.format(PORT))
     server.serve_forever()
 
+
 def reserve():
     """`build`, then `serve`"""
     build()
     serve()
 
+
 def preview():
     """Build production version of site"""
     local('pelican -s publishconf.py')
+
 
 def publish():
     """Publish to GitHub Pages"""
