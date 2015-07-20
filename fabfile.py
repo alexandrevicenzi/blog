@@ -69,6 +69,6 @@ def publish():
     clean()
     local('pelican -s publishconf.py')
     local('echo blog.alexandrevicenzi.com > {deploy_path}/CNAME'.format(**env))
-    local("echo $'User-agent: *\nSitemap: http://blog.alexandrevicenzi.com/sitemap.xml' > robots.txt")
+    local("echo $'User-agent: *\nSitemap: http://blog.alexandrevicenzi.com/sitemap.xml' > {deploy_path}/robots.txt".format(**env))
     local("ghp-import -b {github_pages_branch} {deploy_path}".format(**env))
     local("git push origin {github_pages_branch}".format(**env))
