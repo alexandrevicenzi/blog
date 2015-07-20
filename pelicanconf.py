@@ -3,16 +3,20 @@
 
 from __future__ import unicode_literals
 
-SITEURL = 'http://localhost:8000'
-SITENAME = u"Alexandre Vicenzi's Blog"
 AUTHOR = u'Alexandre Vicenzi'
-AUTHOR_SHORT_DESC = 'Web Developer - Maker'
-AUTHOR_IMG_URL = '//alexandrevicenzi.com/img/profile.png'
+SITEURL = u'http://localhost:8000'
+SITENAME = u"Alexandre Vicenzi's Blog"
+SITETITLE = AUTHOR
+SITESUBTITLE = u'Web Developer - Maker'
+SITEDESCRIPTION = u'%s\'s Thoughts and Writings' % AUTHOR
+SITELOGO = u'http://alexandrevicenzi.com/img/profile.png'
 
-THEME = '../flex'
-PATH = 'content'
-TIMEZONE = 'America/Sao_Paulo'
-DEFAULT_LANG = u'en'
+ROBOTS = u'index, follow'
+
+THEME = u'../flex'
+PATH = u'content'
+TIMEZONE = u'America/Sao_Paulo'
+DEFAULT_LANG = u'en_US'
 
 FEED_ALL_ATOM = 'feeds/all.atom.xml'
 CATEGORY_FEED_ATOM = None
