@@ -10,13 +10,15 @@ SITETITLE = AUTHOR
 SITESUBTITLE = u'Web Developer - Maker'
 SITEDESCRIPTION = u'%s\'s Thoughts and Writings' % AUTHOR
 SITELOGO = u'http://alexandrevicenzi.com/img/profile.png'
+FAVICON = SITEURL + '/images/favicon.ico'
 
 ROBOTS = u'index, follow'
 
 THEME = u'../flex'
 PATH = u'content'
 TIMEZONE = u'America/Sao_Paulo'
-DEFAULT_LANG = u'en_US'
+DEFAULT_LANG = u'en'
+OG_LOCALE = u'en_US'
 
 FEED_ALL_ATOM = 'feeds/all.atom.xml'
 CATEGORY_FEED_ATOM = None
