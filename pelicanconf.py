@@ -9,7 +9,7 @@ SITENAME = u"Alexandre Vicenzi's Blog"
 SITETITLE = AUTHOR
 SITESUBTITLE = u'Web Developer - Maker'
 SITEDESCRIPTION = u'%s\'s Thoughts and Writings' % AUTHOR
-SITELOGO = u'http://alexandrevicenzi.com/img/profile.png'
+SITELOGO = u'https://alexandrevicenzi.com/img/profile.png'
 FAVICON = SITEURL + '/images/favicon.ico'
 
 ROBOTS = u'index, follow'

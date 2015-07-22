@@ -10,7 +10,7 @@ sys.path.append(os.curdir)
 
 from pelicanconf import *
 
-SITEURL = 'http://blog.alexandrevicenzi.com'
+SITEURL = 'https://blog.alexandrevicenzi.com'
 FAVICON = SITEURL + '/images/favicon.ico'
 RELATIVE_URLS = False
 
