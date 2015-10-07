@@ -1,7 +1,7 @@
 Title: Nunjucks eval tag
 Date: 2015-07-11 08:00
 Modified: 2015-07-11 08:00
-Tags: nunjucks, eval, jinja2
+Tags: nunjucks, eval, jinja2, NodeJS
 Slug: nunjucks-eval
 
 This week I started to work in [Gistfy project](https://github.com/alexandrevicenzi/gistfy) again, and one of the changes is replace [swig](https://github.com/paularmstrong/swig) by [Nunjucks](http://mozilla.github.io/nunjucks/). [swig is no longer maintained](https://github.com/paularmstrong/swig/issues/628), and Nunjucks looks a really cool project.

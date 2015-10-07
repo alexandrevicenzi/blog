@@ -37,7 +37,8 @@ SOCIAL = (('linkedin', 'https://br.linkedin.com/in/alexandrevicenzi/en'),
           ('rss', '//blog.alexandrevicenzi.com/feeds/all.atom.xml'))
 
 MENUITEMS = (('Archives', '/archives.html'),
-             ('Categories', '/categories.html'),)
+             ('Categories', '/categories.html'),
+             ('Tags', '/tags.html'),)
 
 CC_LICENSE = {
     'name': 'Creative Commons Attribution-ShareAlike',
