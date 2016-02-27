@@ -4,7 +4,7 @@ Modified: 2015-07-18 08:00
 
 ### Who I am
 
-Hi, I'm Alexandre Vicenzi and I live in Blumenau - Brazil.
+Hi, I'm [Alexandre Vicenzi](http://alexandrevicenzi.com) and I live in Blumenau - Brazil.
 
 ### What I do
 

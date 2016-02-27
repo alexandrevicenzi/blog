@@ -16,9 +16,10 @@ ROBOTS = u'index, follow'
 
 THEME = u'../flex'
 PATH = u'content'
-TIMEZONE = u'America/Sao_Paulo'
+TIMEZONE = u'America/New_York'
 DEFAULT_LANG = u'en'
 OG_LOCALE = u'en_US'
+LOCALE = u'en_US'
 
 FEED_ALL_ATOM = 'feeds/all.atom.xml'
 CATEGORY_FEED_ATOM = None
@@ -34,6 +35,7 @@ LINKS = (('Portfolio', '//alexandrevicenzi.com'),)
 SOCIAL = (('linkedin', 'https://br.linkedin.com/in/alexandrevicenzi/en'),
           ('github', 'https://github.com/alexandrevicenzi'),
           ('google', 'https://google.com/+AlexandreVicenzi'),
+          ('twitter', 'https://twitter.com/alxvicenzi'),
           ('rss', '//blog.alexandrevicenzi.com/feeds/all.atom.xml'))
 
 MENUITEMS = (('Archives', '/archives.html'),
