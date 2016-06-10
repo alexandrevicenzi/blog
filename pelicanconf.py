@@ -7,10 +7,12 @@ AUTHOR = u'Alexandre Vicenzi'
 SITEURL = u'http://localhost:8000'
 SITENAME = u"Alexandre Vicenzi's Blog"
 SITETITLE = AUTHOR
-SITESUBTITLE = u'Web Developer - Maker'
+SITESUBTITLE = u'Sotfware Engineer - Maker'
 SITEDESCRIPTION = u'%s\'s Thoughts and Writings' % AUTHOR
-SITELOGO = u'https://alexandrevicenzi.com/img/profile.png'
+SITELOGO = u'//s.gravatar.com/avatar/5dc5ba59a94eeab2106ad9d397361b2c?s=120'
 FAVICON = SITEURL + '/images/favicon.ico'
+BROWSER_COLOR = '#333333'
+PYGMENTS_STYLE = 'monokai'
 
 ROBOTS = u'index, follow'
 
@@ -48,7 +50,7 @@ CC_LICENSE = {
     'slug': 'by-sa'
 }
 
-COPYRIGHT_YEAR = 2015
+COPYRIGHT_YEAR = 2016
 
 DEFAULT_PAGINATION = 10
 
@@ -60,21 +62,22 @@ SITEMAP = {
     'priorities': {
         'articles': 0.6,
         'indexes': 0.6,
-        'pages': 0.5
+        'pages': 0.5,
     },
     'changefreqs': {
         'articles': 'monthly',
         'indexes': 'daily',
-        'pages': 'monthly'
+        'pages': 'monthly',
     }
 }
 
 STATUSCAKE = {
     'trackid': 'SL0UAgrsYP',
-    'days': 7
+    'days': 7,
+    'rumid': 6852,
 }
 
 USE_LESS = True
 
 # Uncomment following line if you want document-relative URLs when developing
-#RELATIVE_URLS = True
+# RELATIVE_URLS = True

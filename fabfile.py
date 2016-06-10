@@ -2,9 +2,9 @@ from fabric.api import *
 import os
 import shutil
 import sys
-import SocketServer
 
-from pelican.server import ComplexHTTPRequestHandler
+from pelican.server import ComplexHTTPRequestHandler, socketserver
+
 
 # Local path configuration (can be absolute or relative to fabfile)
 env.deploy_path = 'output'
@@ -13,7 +13,7 @@ DEPLOY_PATH = env.deploy_path
 # Github Pages configuration
 env.github_pages_branch = "gh-pages"
 
-# Port for `serve`
+SERVER = '127.0.0.1'
 PORT = 8000
 
 
@@ -44,14 +44,21 @@ def serve():
     """Serve site at http://localhost:8000/"""
     os.chdir(env.deploy_path)
 
-    class AddressReuseTCPServer(SocketServer.TCPServer):
-        allow_reuse_address = True
+    socketserver.TCPServer.allow_reuse_address = True
 
-    server = AddressReuseTCPServer(('', PORT), ComplexHTTPRequestHandler)
+    try:
+        httpd = socketserver.TCPServer((SERVER, PORT), ComplexHTTPRequestHandler)
+    except OSError as e:
+        print("Could not listen on port %s, server %s." % (PORT, SERVER))
+        sys.exit(getattr(e, 'exitcode', 1))
 
-    sys.stderr.write('Serving on port {0} ...\n'.format(PORT))
-    server.serve_forever()
+    print("Serving at https://%s:%s." % (SERVER, PORT))
 
+    try:
+        httpd.serve_forever()
+    except KeyboardInterrupt as e:
+        print("Shutting down server.")
+        httpd.socket.close()
 
 def reserve():
     """`build`, then `serve`"""
