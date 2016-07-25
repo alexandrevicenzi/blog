@@ -3,7 +3,7 @@ Date: 2015-07-22 08:00
 Modified: 2015-07-22 08:00
 Tags: pelican, python, theme
 Slug: flex-pelican-theme
-Cover: https://raw.githubusercontent.com/alexandrevicenzi/Flex/master/screenshot.png
+Cover: images/flex-screenshot.png
 
 I just start a new fresh blog using [Pelican](http://getpelican.com). Sometimes choosing a theme for a new site is something difficult that takes time.
 
@@ -11,7 +11,7 @@ In the Pelican [theme gallery](http://www.pelicanthemes.com/), I couldn't find a
 
 Creating a theme for Pelican is quite easy, unlike Wordpress. You can take a look in the [Source Code of Flex](https://github.com/alexandrevicenzi/Flex).
 
-But how Flex looks like? Well, you can see [this screenshot](https://raw.githubusercontent.com/alexandrevicenzi/Flex/master/screenshot.png), but you already know how it looks like, you're looking at it. :D
+But how Flex looks like? Well, you can see [this screenshot](images/flex-screenshot.png), but you already know how it looks like, you're looking at it. :D
 
 I really care about SEO and integrations with Facebook, Google Plus and other social networks, so this theme offers some features:
 

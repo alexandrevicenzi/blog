@@ -75,7 +75,14 @@ STATUSCAKE = {
     'trackid': 'SL0UAgrsYP',
     'days': 7,
     'rumid': 6852,
+    'design': 6,
 }
+
+EXTRA_PATH_METADATA = {
+    'extra/custom.css': {'path': 'static/custom.css'},
+}
+
+CUSTOM_CSS = 'static/custom.css'
 
 USE_LESS = True
 
