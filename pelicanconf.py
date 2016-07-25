@@ -78,6 +78,8 @@ STATUSCAKE = {
     'design': 6,
 }
 
+STATIC_PATHS = ['images', 'extra']
+
 EXTRA_PATH_METADATA = {
     'extra/custom.css': {'path': 'static/custom.css'},
 }
