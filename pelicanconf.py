@@ -32,7 +32,7 @@ AUTHOR_FEED_RSS = None
 USE_FOLDER_AS_CATEGORY = True
 MAIN_MENU = True
 
-LINKS = (('Portfolio', '//alexandrevicenzi.com'),)
+LINKS = (('Portfolio', 'http://alexandrevicenzi.com'),)
 
 SOCIAL = (('linkedin', 'https://br.linkedin.com/in/alexandrevicenzi/en'),
           ('github', 'https://github.com/alexandrevicenzi'),
