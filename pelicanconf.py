@@ -1,27 +1,29 @@
 #!/usr/bin/env python
 # -*- coding: utf-8 -*- #
 
-from __future__ import unicode_literals
-
-AUTHOR = u'Alexandre Vicenzi'
-SITEURL = u'http://localhost:8000'
-SITENAME = u"Alexandre Vicenzi's Blog"
+AUTHOR = 'Alexandre Vicenzi'
+SITEURL = 'http://localhost:8000'
+SITENAME = "Alexandre Vicenzi's Blog"
 SITETITLE = AUTHOR
-SITESUBTITLE = u'Sotfware Engineer - Maker'
-SITEDESCRIPTION = u'%s\'s Thoughts and Writings' % AUTHOR
-SITELOGO = u'//s.gravatar.com/avatar/5dc5ba59a94eeab2106ad9d397361b2c?s=120'
-FAVICON = SITEURL + '/images/favicon.ico'
+SITESUBTITLE = 'Sotfware Engineer - Maker'
+SITEDESCRIPTION = '%s\'s Thoughts and Writings' % AUTHOR
+SITELOGO = '//s.gravatar.com/avatar/5dc5ba59a94eeab2106ad9d397361b2c?s=120'
+FAVICON = '/images/favicon.ico'
 BROWSER_COLOR = '#333333'
 PYGMENTS_STYLE = 'monokai'
 
-ROBOTS = u'index, follow'
+ROBOTS = 'index, follow'
 
-THEME = u'../flex'
-PATH = u'content'
-TIMEZONE = u'America/New_York'
-DEFAULT_LANG = u'en'
-OG_LOCALE = u'en_US'
-LOCALE = u'en_US'
+THEME = '../flex'
+PATH = 'content'
+TIMEZONE = 'America/New_York'
+DEFAULT_LANG = 'en'
+OG_LOCALE = 'en_US'
+LOCALE = 'en_US'
+
+DATE_FORMATS = {
+    'en': '%B %d, %Y',
+}
 
 FEED_ALL_ATOM = 'feeds/all.atom.xml'
 CATEGORY_FEED_ATOM = None
@@ -29,7 +31,7 @@ TRANSLATION_FEED_ATOM = None
 AUTHOR_FEED_ATOM = None
 AUTHOR_FEED_RSS = None
 
-USE_FOLDER_AS_CATEGORY = True
+USE_FOLDER_AS_CATEGORY = False
 MAIN_MENU = True
 
 LINKS = (('Portfolio', 'http://alexandrevicenzi.com'),)
@@ -55,7 +57,7 @@ COPYRIGHT_YEAR = 2016
 DEFAULT_PAGINATION = 10
 
 PLUGIN_PATHS = ['./pelican-plugins']
-PLUGINS = ['sitemap']
+PLUGINS = ['sitemap', 'post_stats']
 
 SITEMAP = {
     'format': 'xml',
@@ -70,6 +72,12 @@ SITEMAP = {
         'pages': 'monthly',
     }
 }
+
+FEED_ALL_ATOM = 'feeds/all.atom.xml'
+CATEGORY_FEED_ATOM = 'feeds/%s.atom.xml'
+
+DISQUS_SITENAME = "alexandrevicenziblog"
+ADD_THIS_ID = 'ra-55adbb025d4f7e55'
 
 STATUSCAKE = {
     'trackid': 'SL0UAgrsYP',
@@ -87,6 +95,3 @@ EXTRA_PATH_METADATA = {
 CUSTOM_CSS = 'static/custom.css'
 
 USE_LESS = True
-
-# Uncomment following line if you want document-relative URLs when developing
-# RELATIVE_URLS = True

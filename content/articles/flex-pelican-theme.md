@@ -1,6 +1,7 @@
 Title: Flex: Responsive Pelican theme
 Date: 2015-07-22 08:00
 Modified: 2015-07-22 08:00
+Category: News
 Tags: pelican, python, theme
 Slug: flex-pelican-theme
 Cover: images/flex-screenshot.png

@@ -1,6 +1,7 @@
 Title: Alexandre's Blog is back
 Date: 2015-07-08 08:00
 Modified: 2015-07-08 08:00
+Category: News
 Tags: blog
 Slug: im-back
 

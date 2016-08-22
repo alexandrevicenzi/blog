@@ -1,6 +1,7 @@
 Title: Flex 1.2.0
 Date: 2016-06-10 08:00
 Modified: 2016-06-10 08:00
+Category: News
 Tags: pelican, python, theme
 Slug: flex-pelican-theme-update-1-2-0
 Cover: images/flex-screenshot.png

@@ -1,6 +1,7 @@
 Title: How to use OLED display with Banana Pi
 Date: 2016-07-25 08:00
 Modified: 2016-07-25 08:00
+Category: Embedded Systems
 Tags: bananapi, display, python, gpio, i2c, oled
 Slug: oled-display-i2c-with-bananapi
 Cover: images/BananaPi-OLED-Small.png

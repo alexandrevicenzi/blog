@@ -1,6 +1,7 @@
 Title: Code once share everywhere
 Date: 2016-02-25 08:00
 Modified: 2016-02-25 08:00
+Category: News
 Tags: nodejs, code, github, bitbucket, snippets
 Slug: code-onde-share-everywhere
 

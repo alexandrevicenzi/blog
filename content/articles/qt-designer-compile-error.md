@@ -1,6 +1,7 @@
 Title: Qt Designer error: cannot find -lGL
 Date: 2016-07-31 08:00
 Modified: 2016-07-31 08:00
+Category: Dev
 Tags: qt5, c, c++, opensuse
 Slug: qt-designer-compile-error
 

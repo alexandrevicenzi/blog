@@ -1,6 +1,7 @@
 Title: New version of Django-PJAX
 Date: 2015-07-08 15:00
 Modified: 2015-07-08 15:00
+Category: News
 Tags: django, pjax, jQuery, python
 Slug: new-version-django-pjax
 
