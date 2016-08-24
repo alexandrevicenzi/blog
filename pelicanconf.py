@@ -26,7 +26,7 @@ DATE_FORMATS = {
 }
 
 FEED_ALL_ATOM = 'feeds/all.atom.xml'
-CATEGORY_FEED_ATOM = None
+CATEGORY_FEED_ATOM = 'feeds/%s.atom.xml'
 TRANSLATION_FEED_ATOM = None
 AUTHOR_FEED_ATOM = None
 AUTHOR_FEED_RSS = None
@@ -72,9 +72,6 @@ SITEMAP = {
         'pages': 'monthly',
     }
 }
-
-FEED_ALL_ATOM = 'feeds/all.atom.xml'
-CATEGORY_FEED_ATOM = 'feeds/%s.atom.xml'
 
 DISQUS_SITENAME = "alexandrevicenziblog"
 ADD_THIS_ID = 'ra-55adbb025d4f7e55'
