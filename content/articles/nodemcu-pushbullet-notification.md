@@ -3,7 +3,7 @@ Date: 2016-08-24 8:00
 Modified: 2016-08-24 8:00
 Category: Embedded Systems
 Tags: lua, nodemcu, esp, pushbullet
-Slug: nodemcu-pushbullet-notifiocation
+Slug: nodemcu-pushbullet-notification
 
 With [NodeMCU HTTP Module](https://nodemcu.readthedocs.io/en/master/en/modules/http/) we can GET/POST/PUT/DELETE over HTTP(S), as well as customized requests. If you ever used any other programming language you know how easy is to make an HTTP request.
 
