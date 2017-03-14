@@ -5,7 +5,7 @@ AUTHOR = 'Alexandre Vicenzi'
 SITEURL = 'http://localhost:8000'
 SITENAME = "Alexandre Vicenzi's Blog"
 SITETITLE = AUTHOR
-SITESUBTITLE = 'Sotfware Engineer - Maker'
+SITESUBTITLE = 'Software Engineer'
 SITEDESCRIPTION = '%s\'s Thoughts and Writings' % AUTHOR
 SITELOGO = '//s.gravatar.com/avatar/5dc5ba59a94eeab2106ad9d397361b2c?s=120'
 FAVICON = '/images/favicon.ico'
@@ -17,6 +17,8 @@ ROBOTS = 'index, follow'
 THEME = '../flex'
 PATH = 'content'
 TIMEZONE = 'America/New_York'
+
+I18N_TEMPLATES_LANG = 'en'
 DEFAULT_LANG = 'en'
 OG_LOCALE = 'en_US'
 LOCALE = 'en_US'
@@ -33,6 +35,7 @@ AUTHOR_FEED_RSS = None
 
 USE_FOLDER_AS_CATEGORY = False
 MAIN_MENU = True
+HOME_HIDE_TAGS = True
 
 LINKS = (('Portfolio', 'http://alexandrevicenzi.com'),)
 
@@ -57,7 +60,9 @@ COPYRIGHT_YEAR = 2016
 DEFAULT_PAGINATION = 10
 
 PLUGIN_PATHS = ['./pelican-plugins']
-PLUGINS = ['sitemap', 'post_stats']
+PLUGINS = ['sitemap', 'post_stats', 'i18n_subsites']
+
+JINJA_ENVIRONMENT = {'extensions': ['jinja2.ext.i18n']}
 
 SITEMAP = {
     'format': 'xml',
@@ -92,3 +97,16 @@ EXTRA_PATH_METADATA = {
 CUSTOM_CSS = 'static/custom.css'
 
 USE_LESS = True
+
+GOOGLE_ADSENSE = {
+    'ca_id': 'ca-pub-6625957038449899',
+    'page_level_ads': True,
+    'ads': {
+        'aside': '5340595560',
+        'main_menu': '',
+        'index_top': '',
+        'index_bottom': '9584371569',
+        'article_top': '',
+        'article_bottom': '7257980762',
+    }
+}

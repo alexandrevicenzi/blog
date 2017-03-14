@@ -3,7 +3,7 @@ import os
 import shutil
 import sys
 
-from pelican.server import ComplexHTTPRequestHandler, socketserver
+#from pelican.server import ComplexHTTPRequestHandler, socketserver
 
 
 # Local path configuration (can be absolute or relative to fabfile)
@@ -35,11 +35,6 @@ def rebuild():
     build()
 
 
-def regenerate():
-    """Automatically regenerate site upon file modification"""
-    local('pelican -r -s pelicanconf.py')
-
-
 def serve():
     """Serve site at http://localhost:8000/"""
     os.chdir(env.deploy_path)
@@ -59,16 +54,6 @@ def serve():
     except KeyboardInterrupt as e:
         print("Shutting down server.")
         httpd.socket.close()
-
-def reserve():
-    """`build`, then `serve`"""
-    build()
-    serve()
-
-
-def preview():
-    """Build production version of site"""
-    local('pelican -s publishconf.py')
 
 
 def publish():
