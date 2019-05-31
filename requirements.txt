@@ -1,4 +1,0 @@
-fabric
-pelican
-markdown
-ghp-import
