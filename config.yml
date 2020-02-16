@@ -1,0 +1,69 @@
+baseurl: https://alexandrevicenzi.com/
+languageCode: en
+title: Alexandre Vicenzi
+theme: soho
+summarylength: 10
+# paginate: 10
+
+enableEmoji: true
+enableRobotsTXT: true
+
+googleAnalytics: UA-55543164-1
+# disqusShortname:
+
+params:
+  author: Alexandre Vicenzi
+  # themeColor: "#fc2803"
+  # description:
+  gravatar: blog@alexandrevicenzi.com
+
+  copyright: Alexandre Vicenzi
+  license: CC BY-SA 4.0
+  licenseURL: https://creativecommons.org/licenses/by-sa/4.0
+
+  socialIcons:
+    - icon: fa-linkedin
+      title: Linkedin
+      url: https://www.linkedin.com/in/alexandrevicenzi
+    - icon: fa-github
+      title: GitHub
+      url: https://github.com/alexandrevicenzi
+    - icon: fa-twitter
+      title: Twitter
+      url: https://twitter.com/alxvicenzi
+    - icon: fa-speaker-deck
+      title: SpeakerDeck
+      url: https://speakerdeck.com/alexandrevicenzi
+
+  customCss:
+    - 'css/blog.css'
+
+  # customJs:
+  #   - '#'
+
+menu:
+  main:
+  - name: Posts
+    weight: 100
+    identifier: posts
+    url: /posts/
+  - name: About Me
+    identifier: about
+    weight: 300
+    url: /about/
+  - name: Donate
+    identifier: donate
+    weight: 200
+    url: /donate/
+
+markup:
+  highlight:
+    codeFences: true
+    guessSyntax: false
+    hl_Lines: ""
+    lineNoStart: 1
+    lineNos: false
+    lineNumbersInTable: true
+    noClasses: true
+    style: monokai
+    tabWidth: 4

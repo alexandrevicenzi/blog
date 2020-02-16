@@ -1,7 +1,3 @@
-# My Personal Blog
+# Blog
 
-TODO
-
-## Hosting
-
-This blog is hosted by [GitHub Pages](https://pages.github.com/).
+Source code for my personal blog.

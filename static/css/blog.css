@@ -1,0 +1,51 @@
+.donations .coin {
+  height: 32px;
+  padding-right: 4px;
+  justify-self: center;
+}
+
+.donations a {
+  margin: 20px;
+  text-decoration: none;
+  display: grid;
+}
+
+.donations a:visited {
+  color: #304455;
+}
+
+.donations .donations {
+  display: inline-grid;
+}
+
+.donations .addr {
+  padding-top: 25px;
+  font-weight: 400;
+}
+
+.donations .addr img {
+  max-width: 250px;
+  padding: 10px;
+}
+
+.donations .addr tr {
+  padding: 5px 0 5px 0;
+}
+
+.donations img {
+  margin: 0;
+  margin: auto;
+}
+
+.donations table {
+  border: none !important;
+}
+
+.donations tr,
+.donations td,
+.donations th {
+  padding: 0 !important;
+  border: none !important;
+  background-color: #fff !important;
+  text-align: center;
+}
