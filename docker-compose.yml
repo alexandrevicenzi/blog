@@ -2,10 +2,10 @@ version: '3'
 services:
   app:
     build: .
-    working_dir: /go/src/github.com/alexandrevicenzi/alexandrevicenzi.github.io
+    working_dir: /blog
     command: hugo server -v --bind "0.0.0.0" --port 3000 --watch
     ports:
       - "3000:3000"
     volumes:
-      - .:/go/src/github.com/alexandrevicenzi/alexandrevicenzi.github.io
-      - ./../soho:/go/src/github.com/alexandrevicenzi/alexandrevicenzi.github.io/themes/soho
+      - .:/blog
+      - ./../soho:/blog/themes/soho
