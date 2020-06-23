@@ -1,8 +1,9 @@
 ---
 title: "About me"
 date: 2020-02-09
-disable_comments: true
 slug: about-me
+disable_comments: true
+disable_share: true
 aliases:
   - about
 ---

@@ -3,6 +3,7 @@ title: Donate
 date: 2020-02-09
 slug: donate
 disable_comments: true
+disable_share: true
 description: Donate as a sign of appreciation
 summary: Donations for my contributions are always welcome, but if you can contribute back to the open source community is even better.
 ---
