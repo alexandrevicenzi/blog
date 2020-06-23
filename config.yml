@@ -3,16 +3,23 @@ languageCode: en
 title: Alexandre Vicenzi
 theme: soho
 summarylength: 10
-# paginate: 10
+paginate: 10
 
 enableEmoji: true
 enableRobotsTXT: true
 
 googleAnalytics: UA-55543164-1
-# disqusShortname:
+disqusShortname: alexandrevicenziblog
 
 params:
+  mainSections:
+    - posts
+
+  images:
+    - https://www.gravatar.com/avatar/5dc5ba59a94eeab2106ad9d397361b2c?s=400&d=mp
+
   author: Alexandre Vicenzi
+  description: Software Engineer
   # themeColor: "#fc2803"
   # description:
   gravatar: blog@alexandrevicenzi.com
@@ -41,29 +48,52 @@ params:
   # customJs:
   #   - '#'
 
+taxonomies:
+  category: categories
+  series: series
+  tag: tags
+
 menu:
   main:
-  - name: Posts
-    weight: 100
-    identifier: posts
-    url: /posts/
-  - name: About Me
-    identifier: about
-    weight: 300
-    url: /about/
+  # - name: Posts
+  #   weight: 100
+  #   identifier: posts
+  #   url: /posts/
   - name: Donate
     identifier: donate
     weight: 200
     url: /donate/
+  - name: About Me
+    identifier: about
+    weight: 300
+    url: /about-me/
 
 markup:
+  defaultMarkdownHandler: goldmark
+  goldmark:
+    extensions:
+      definitionList: true
+      footnote: true
+      linkify: true
+      strikethrough: true
+      table: true
+      taskList: true
+      typographer: true
+    parser:
+      attribute: true
+      autoHeadingID: true
+      autoHeadingIDType: github
+    renderer:
+      hardWraps: false
+      unsafe: true
+      xhtml: false
   highlight:
     codeFences: true
     guessSyntax: false
-    hl_Lines: ""
+    hl_Lines: ''
     lineNoStart: 1
-    lineNos: false
+    lineNos: true
     lineNumbersInTable: true
     noClasses: true
-    style: monokai
+    style: github
     tabWidth: 4

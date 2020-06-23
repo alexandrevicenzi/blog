@@ -1,9 +1,9 @@
 ---
-title: "2020 Resolutions"
-date: 2020-02-16T00:00:00Z
-draft: false
-type: "post"
-hidden: false
+title: 2020 Resolutions
+date: 2020-02-16
+slug: 2020-resolutions
+description: Every year we make some kind of promise, well, this year I made a resolution to create a new blog after a while without writing to any blogs.
+summary: Every year we make some kind of promise, well, this year I made a resolution to create a new blog after a while without writing to any blogs.
 ---
 
 Every year we make some kind of promise, well, this year I made a resolution to create a new blog after a while without writing to any blogs.

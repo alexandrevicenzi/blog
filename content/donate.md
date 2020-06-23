@@ -1,39 +1,38 @@
 ---
-title: "Donate"
-date: 2020-02-09T16:50:29Z
-draft: false
-type: "page"
+title: Donate
+date: 2020-02-09
+slug: donate
 disable_comments: true
-description: "If you like this blog, or are using some code that I wrote and/or project that I maintain/collaborate, consider donating as a sign of appreciation."
+description: Donate as a sign of appreciation
+summary: Donations for my contributions are always welcome, but if you can contribute back to the open source community is even better.
 ---
 
-<div>
-  <p>
-    If you like this blog, or are using some code that I wrote and/or project that I maintain/collaborate, consider donating as a sign of appreciation.
-  </p>
+Donations for my contributions are always welcome, but if you can contribute back to the open source community is even better.
 
-  <div class="donations">
-    <table class="buttons">
-      <tr id="addr-buttons"></tr>
-    </table>
+This blog currently has no ads and I intend to keep this way. Most of the code that I write is under an OSS license, and my writings are usually licensed under Creative Common.
 
-    <table class="addr">
-      <tr>
-        <td id="coin-info"></td>
-      </tr>
-      <tr>
-        <td id="coin-addr"></td>
-      </tr>
-      <tr>
-        <td>
-          <img id="coin-qr" src="">
-        </td>
-      </tr>
-      <tr>
-        <td id="coin-alert"></td>
-      </tr>
-    </table>
-  </div>
+You can find multiple ways to donate below, or you can also pay me a beer, pale lager (Pilsner or Helles) preferably,  if we ever meet one day.
+
+<div class="donations">
+  <table class="buttons">
+    <tr id="addr-buttons"></tr>
+  </table>
+
+  <table class="addr">
+    <tr>
+      <td id="coin-info"></td>
+    </tr>
+    <tr>
+      <td id="coin-addr"></td>
+    </tr>
+    <tr>
+      <td>
+        <img id="coin-qr" src="">
+      </td>
+    </tr>
+    <tr>
+      <td id="coin-alert"></td>
+    </tr>
   </table>
 </div>
 
@@ -63,18 +62,18 @@ description: "If you like this blog, or are using some code that I wrote and/or 
       'addr': 'MWGq2vY976e6KmHUZ6QhafeHGiEipFBeG5',
       'name': 'Litecoin',
     },
-    'ZEC': {
-      'addr': 't1Sjvm8GzyeEjKD6gHQnigdXVaBaY1bf4KY',
-      'name': 'Zcash',
-    },
-    'XTZ': {
-      'addr': 'tz1UQRC651A91cAHy4bhuwJfEFUdEmmrtUUH',
-      'name': 'Tezos',
-    },
-    'DOGE': {
-      'addr': 'DKj7XRoeiHuf4TTjoRHpBBLsGR8MWA6nhA',
-      'name': 'Dogecoin',
-    },
+    // 'ZEC': {
+    //   'addr': 't1Sjvm8GzyeEjKD6gHQnigdXVaBaY1bf4KY',
+    //   'name': 'Zcash',
+    // },
+    // 'XTZ': {
+    //   'addr': 'tz1UQRC651A91cAHy4bhuwJfEFUdEmmrtUUH',
+    //   'name': 'Tezos',
+    // },
+    // 'DOGE': {
+    //   'addr': 'DKj7XRoeiHuf4TTjoRHpBBLsGR8MWA6nhA',
+    //   'name': 'Dogecoin',
+    // },
     'PayPal': {
       'external': 'https://www.paypal.me/avicenzi'
     },
@@ -95,7 +94,7 @@ description: "If you like this blog, or are using some code that I wrote and/or 
         a.href = addr.external;
         a.target = '_blank';
       } else {
-        a.href = '#'
+        a.href = 'javascript:void()'
         a.onclick = function() { showAddr(this.title); };
       }
 

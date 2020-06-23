@@ -3,7 +3,7 @@ services:
   app:
     build: .
     working_dir: /blog
-    command: hugo server -v --bind "0.0.0.0" --port 3000 --watch
+    command: hugo server -v --bind "0.0.0.0" --port 3000 --watch --buildDrafts --buildFuture
     ports:
       - "3000:3000"
     volumes:

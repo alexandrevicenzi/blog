@@ -1,6 +1,9 @@
+.donations {
+  margin-top: 2rem;
+
+}
 .donations .coin {
-  height: 32px;
-  padding-right: 4px;
+  height: 64px;
   justify-self: center;
 }
 
@@ -48,4 +51,8 @@
   border: none !important;
   background-color: #fff !important;
   text-align: center;
+}
+
+.sidebar-about .lead {
+  display: none;
 }
