@@ -15,7 +15,7 @@ Visit [http://localhost:3000/](http://localhost:3000/)
 ### Build static pages
 
 ```sh
-rm -rf docs/* && docker-compose exec app sh -c "hugo -D -d docs/"
+docker-compose exec app sh -c "hugo --cleanDestinationDir -D -d docs/"
 ```
 
 ## License

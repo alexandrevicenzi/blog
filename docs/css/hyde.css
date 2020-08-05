@@ -315,3 +315,17 @@ a.tag-link {
 a.tag-link:hover {
   text-decoration: none;
 }
+
+figure {
+  padding: 0;
+  margin: 0;
+}
+
+figure > img {
+  margin: 0 auto;
+}
+
+figcaption {
+  text-align: center;
+  font-size: 80%;
+}

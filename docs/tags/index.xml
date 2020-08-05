@@ -6,7 +6,7 @@
     <description>Recent content in Tags on Alexandre Vicenzi</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
-    <lastBuildDate>Tue, 23 Jun 2020 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Wed, 05 Aug 2020 00:00:00 +0000</lastBuildDate>
     
 	<atom:link href="https://alexandrevicenzi.com/tags/index.xml" rel="self" type="application/rss+xml" />
     
@@ -14,7 +14,7 @@
     <item>
       <title>agile</title>
       <link>https://alexandrevicenzi.com/tags/agile/</link>
-      <pubDate>Tue, 23 Jun 2020 00:00:00 +0000</pubDate>
+      <pubDate>Wed, 05 Aug 2020 00:00:00 +0000</pubDate>
       
       <guid>https://alexandrevicenzi.com/tags/agile/</guid>
       <description></description>
@@ -23,9 +23,36 @@
     <item>
       <title>engineering</title>
       <link>https://alexandrevicenzi.com/tags/engineering/</link>
-      <pubDate>Tue, 23 Jun 2020 00:00:00 +0000</pubDate>
+      <pubDate>Wed, 05 Aug 2020 00:00:00 +0000</pubDate>
       
       <guid>https://alexandrevicenzi.com/tags/engineering/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>good-practices</title>
+      <link>https://alexandrevicenzi.com/tags/good-practices/</link>
+      <pubDate>Wed, 05 Aug 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://alexandrevicenzi.com/tags/good-practices/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>management</title>
+      <link>https://alexandrevicenzi.com/tags/management/</link>
+      <pubDate>Wed, 05 Aug 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://alexandrevicenzi.com/tags/management/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>standards</title>
+      <link>https://alexandrevicenzi.com/tags/standards/</link>
+      <pubDate>Wed, 05 Aug 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://alexandrevicenzi.com/tags/standards/</guid>
       <description></description>
     </item>
     
@@ -35,15 +62,6 @@
       <pubDate>Tue, 23 Jun 2020 00:00:00 +0000</pubDate>
       
       <guid>https://alexandrevicenzi.com/tags/feedback/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>management</title>
-      <link>https://alexandrevicenzi.com/tags/management/</link>
-      <pubDate>Tue, 23 Jun 2020 00:00:00 +0000</pubDate>
-      
-      <guid>https://alexandrevicenzi.com/tags/management/</guid>
       <description></description>
     </item>
     

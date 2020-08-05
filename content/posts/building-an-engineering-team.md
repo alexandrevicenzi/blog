@@ -4,6 +4,8 @@ date: 2020-06-23
 slug: building-an-engineering-team
 description: Learn how to build a Dev team, what does it take, and how you can tell if you built a good team.
 summary: In today's article, I'm going to share my thoughts on how to build a Dev team, what does it take, and how you can tell if you built a good team, as well as what is a good team.
+images:
+  - /images/content/blocks.jpg
 tags:
   - management
   - feedback
@@ -11,6 +13,8 @@ tags:
   - agile
   - engineering
 ---
+
+{{< figure src="/images/content/blocks.jpg" width="400px" alt="Building Blocks" caption="Photo by [Jeremy Thomas](https://unsplash.com/@jeremythomasphoto) on [Unsplash](https://unsplash.com/)" >}}
 
 Your company is growing, there are new products that must be built to bring more customers. Your manager comes to you and asks you to assemble a new team to work on a brand-new project, they also provide you with a small number of engineers to get the project going ASAP.
 
