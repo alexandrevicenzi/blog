@@ -133,18 +133,11 @@ footer {
 
 @media (min-width: 48em) {
   .content {
-    max-width: 38rem;
+    max-width: 40rem;
     margin-left: 20rem;
     margin-right: 2rem;
     margin-bottom: -40px;
     min-height: 100%;
-  }
-}
-
-@media (min-width: 64em) {
-  .content {
-    margin-left: 22rem;
-    margin-right: 4rem;
   }
 }
 
@@ -328,4 +321,11 @@ figure > img {
 figcaption {
   text-align: center;
   font-size: 80%;
+}
+
+.tagline {
+  display: block;
+  font-size: 1.2rem;
+  margin-bottom: .5rem;
+  font-weight: 400;
 }

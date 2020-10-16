@@ -6,24 +6,33 @@
     <description>Recent content in Tags on Alexandre Vicenzi</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
-    <lastBuildDate>Wed, 05 Aug 2020 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Fri, 16 Oct 2020 00:00:00 +0000</lastBuildDate>
     
 	<atom:link href="https://alexandrevicenzi.com/tags/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
-      <title>agile</title>
-      <link>https://alexandrevicenzi.com/tags/agile/</link>
-      <pubDate>Wed, 05 Aug 2020 00:00:00 +0000</pubDate>
+      <title>data-processing</title>
+      <link>https://alexandrevicenzi.com/tags/data-processing/</link>
+      <pubDate>Fri, 16 Oct 2020 00:00:00 +0000</pubDate>
       
-      <guid>https://alexandrevicenzi.com/tags/agile/</guid>
+      <guid>https://alexandrevicenzi.com/tags/data-processing/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>documentation</title>
+      <link>https://alexandrevicenzi.com/tags/documentation/</link>
+      <pubDate>Fri, 16 Oct 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://alexandrevicenzi.com/tags/documentation/</guid>
       <description></description>
     </item>
     
     <item>
       <title>engineering</title>
       <link>https://alexandrevicenzi.com/tags/engineering/</link>
-      <pubDate>Wed, 05 Aug 2020 00:00:00 +0000</pubDate>
+      <pubDate>Fri, 16 Oct 2020 00:00:00 +0000</pubDate>
       
       <guid>https://alexandrevicenzi.com/tags/engineering/</guid>
       <description></description>
@@ -32,9 +41,27 @@
     <item>
       <title>good-practices</title>
       <link>https://alexandrevicenzi.com/tags/good-practices/</link>
-      <pubDate>Wed, 05 Aug 2020 00:00:00 +0000</pubDate>
+      <pubDate>Fri, 16 Oct 2020 00:00:00 +0000</pubDate>
       
       <guid>https://alexandrevicenzi.com/tags/good-practices/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>tests</title>
+      <link>https://alexandrevicenzi.com/tags/tests/</link>
+      <pubDate>Fri, 16 Oct 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://alexandrevicenzi.com/tags/tests/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>agile</title>
+      <link>https://alexandrevicenzi.com/tags/agile/</link>
+      <pubDate>Wed, 05 Aug 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://alexandrevicenzi.com/tags/agile/</guid>
       <description></description>
     </item>
     
