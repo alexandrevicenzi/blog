@@ -10,7 +10,7 @@ summary: Donations for my contributions are always welcome, but if you can contr
 
 Donations for my contributions are always welcome, but if you can contribute back to the open source community is even better.
 
-This blog currently has no ads and I intend to keep this way. Most of the code that I write is under an OSS license, and my writings are usually licensed under Creative Common.
+This blog currently has no ads and I intend to keep this way. Most of the code that I write is under an FOSS license, and my writings are usually licensed under Creative Commons.
 
 You can find multiple ways to donate below, or you can also pay me a beer, pale lager (Pilsner or Helles) preferably,  if we ever meet one day.
 
@@ -51,30 +51,19 @@ You can find multiple ways to donate below, or you can also pay me a beer, pale 
   }
 
   var addrs = {
+    // Coinomi
     'BTC': {
       'addr': '37Md5HiS5Qad84ryY4f5GpuUCod5hNxgqd',
       'name': 'Bitcoin',
+      'multi': false,
     },
+    // MyEtherWallet
     'ETH': {
-      'addr': '0x6b8AD41572dB6e2C91F314d4c4df997da1b062Bc',
+      'addr': '0x8b16354C893100Eea5507AC888Cae62Ca9684c1D',
       'name': 'Ethereum',
+      'token': 'ERC-20',
+      'multi': true,
     },
-    'LTC': {
-      'addr': 'MWGq2vY976e6KmHUZ6QhafeHGiEipFBeG5',
-      'name': 'Litecoin',
-    },
-    // 'ZEC': {
-    //   'addr': 't1Sjvm8GzyeEjKD6gHQnigdXVaBaY1bf4KY',
-    //   'name': 'Zcash',
-    // },
-    // 'XTZ': {
-    //   'addr': 'tz1UQRC651A91cAHy4bhuwJfEFUdEmmrtUUH',
-    //   'name': 'Tezos',
-    // },
-    // 'DOGE': {
-    //   'addr': 'DKj7XRoeiHuf4TTjoRHpBBLsGR8MWA6nhA',
-    //   'name': 'Dogecoin',
-    // },
     'PayPal': {
       'external': 'https://www.paypal.me/avicenzi'
     },
@@ -115,7 +104,13 @@ You can find multiple ways to donate below, or you can also pay me a beer, pale 
     var addr = addrs[coin];
 
     document.getElementById('coin-info').innerText = '{0} Address ({1})'.format(addr.name, coin);
-    document.getElementById('coin-alert').innerText = 'Send only {0} to this address'.format(coin);
+
+    if (addr.multi === true) {
+      document.getElementById('coin-alert').innerText = 'Send {0} or any {1} token to this address'.format(coin, addr.token);
+    } else {
+      document.getElementById('coin-alert').innerText = 'Send only {0} to this address'.format(coin);
+    }
+
     document.getElementById('coin-addr').innerText = addr.addr;
     document.getElementById('coin-qr').src = '/images/donate/{0}-qr.png'.format(coin.toLowerCase());
   }
