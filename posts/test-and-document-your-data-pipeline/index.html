@@ -1,0 +1,393 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+  <meta http-equiv="content-type" content="text/html; charset=utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="generator" content="Hugo 0.76.5" />
+
+  <title>Test and document your data pipeline &middot; Alexandre Vicenzi</title>
+
+  <meta name="description" content="While working on a given project, we thought that testing a data pipeline was difficult, and we always postponed the test of some areas. Later on, we learned the consequences of not testing it." />
+
+  
+
+<meta itemprop="name" content="Test and document your data pipeline">
+<meta itemprop="description" content="While working on a given project, we thought that testing a data pipeline was difficult, and we always postponed the test of some areas. Later on, we learned the consequences of not testing it.">
+<meta itemprop="datePublished" content="2020-10-16T00:00:00+00:00" />
+<meta itemprop="dateModified" content="2020-10-16T00:00:00+00:00" />
+<meta itemprop="wordCount" content="517">
+<meta itemprop="image" content="https://alexandrevicenzi.com/images/content/bug.png">
+
+
+
+<meta itemprop="keywords" content="engineering,good-practices,data-processing,tests,documentation," />
+
+
+<meta name="twitter:card" content="summary_large_image"/>
+<meta name="twitter:image" content="https://alexandrevicenzi.com/images/content/bug.png"/>
+
+<meta name="twitter:title" content="Test and document your data pipeline"/>
+<meta name="twitter:description" content="While working on a given project, we thought that testing a data pipeline was difficult, and we always postponed the test of some areas. Later on, we learned the consequences of not testing it."/>
+
+
+<meta property="og:title" content="Test and document your data pipeline" />
+<meta property="og:description" content="While working on a given project, we thought that testing a data pipeline was difficult, and we always postponed the test of some areas. Later on, we learned the consequences of not testing it." />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://alexandrevicenzi.com/posts/test-and-document-your-data-pipeline/" />
+<meta property="og:image" content="https://alexandrevicenzi.com/images/content/bug.png" />
+<meta property="article:published_time" content="2020-10-16T00:00:00+00:00" />
+<meta property="article:modified_time" content="2020-10-16T00:00:00+00:00" />
+
+
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type":"Person",
+      "@id": "https://alexandrevicenzi.com/#author",
+      "name": "Alexandre Vicenzi",
+      "image": {
+        "@type":"ImageObject",
+        "url": "https://www.gravatar.com/avatar/5dc5ba59a94eeab2106ad9d397361b2c?s=400&d=mp"
+      },
+      "description": "Software Engineer"
+    },
+    {
+      "@type": "WebSite",
+      "@id": "https://alexandrevicenzi.com/#website",
+      "url": "https://alexandrevicenzi.com/",
+      "name": "Alexandre Vicenzi",
+      "description": "Software Engineer",
+      "publisher": {
+        "@id": "https://alexandrevicenzi.com/#author"
+      },
+      "inLanguage": "en"
+    },
+    {
+      "@type": "ImageObject",
+      "url": "https://www.gravatar.com/avatar/5dc5ba59a94eeab2106ad9d397361b2c?s=400&d=mp",
+      "caption": "Alexandre Vicenzi"
+    },
+    {
+      "@type": "WebPage",
+      "@id": "https://alexandrevicenzi.com/posts/test-and-document-your-data-pipeline/#webpage",
+      "url": "https://alexandrevicenzi.com/posts/test-and-document-your-data-pipeline/",
+      "name": "Test and document your data pipeline",
+      "isPartOf": {
+        "@id": "https://alexandrevicenzi.com/#website"
+      },
+      "about": {
+         "@id": "https://alexandrevicenzi.com/#author"
+      },
+      "datePublished": "2020-10-16T00:00:00+00:00",
+      "dateModified": "2020-10-16T00:00:00+00:00",
+      "description": "While working on a given project, we thought that testing a data pipeline was difficult, and we always postponed the test of some areas. Later on, we learned the consequences of not testing it.",
+      "inLanguage": "en",
+      "potentialAction": [
+        {
+          "@type": "ReadAction",
+          "target": [
+            "https://alexandrevicenzi.com/posts/test-and-document-your-data-pipeline/"
+          ]
+        }
+      ]
+    },
+    {
+      "@type": "Article",
+      "isPartOf": {
+        "@id": "https://alexandrevicenzi.com/posts/test-and-document-your-data-pipeline/#webpage"
+      },
+      "mainEntityOfPage": {
+        "@id": "https://alexandrevicenzi.com/posts/test-and-document-your-data-pipeline/#webpage"
+      },
+      "headline": "Test and document your data pipeline",
+      "image": [
+        "https://alexandrevicenzi.com/images/content/bug.png"
+      ],
+      "datePublished": "2020-10-16T00:00:00+00:00",
+      "dateModified": "2020-10-16T00:00:00+00:00",
+      "publisher": {
+        "@id": "https://alexandrevicenzi.com/#author"
+      },
+      "keywords": [
+        "engineering",
+        "good-practices",
+        "data-processing",
+        "tests",
+        "documentation"
+      ],
+      "articleSection": [
+      ],
+      "inLanguage": "en",
+      "author": {
+        "@type": "Person",
+        "name":  null 
+      },
+      "potentialAction": [
+        {
+          "@type": "CommentAction",
+          "name": "Comment",
+          "target": [
+            "https://alexandrevicenzi.com/posts/test-and-document-your-data-pipeline/#comments"
+          ]
+        }
+      ]
+    }
+  ]
+}
+</script>
+
+
+
+  <link type="text/css"
+        rel="stylesheet"
+        href="/css/print.css"
+        media="print">
+
+  <link type="text/css"
+        rel="stylesheet"
+        href="/css/poole.css">
+
+  <link type="text/css"
+        rel="stylesheet"
+        href="/css/hyde.css">
+
+  
+
+
+  <link type="text/css" rel="stylesheet" href="/css/blog.css">
+
+  <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css?family=Open+Sans:400,400i,700&display=swap">
+
+  <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/css/all.min.css"
+        integrity="sha256-mmgLkCYLUQbXn0B1SRqzHar6dCnv9oZFPEC1g1cwlkk="
+        crossorigin="anonymous" />
+
+  <link rel="apple-touch-icon-precomposed"
+        sizes="144x144"
+        href="/apple-touch-icon-144-precomposed.png">
+
+  <link rel="shortcut icon" href="/favicon.png">
+
+  
+  </head>
+<body>
+  <aside class="sidebar">
+  <div class="container">
+    <div class="sidebar-about">
+      
+      <div class="author-image">
+        <img src="https://www.gravatar.com/avatar/5dc5ba59a94eeab2106ad9d397361b2c?s=200&d=mp" class="img-circle img-headshot center" alt="Gravatar">
+      </div>
+      
+
+      <h1>Alexandre Vicenzi</h1>
+
+      
+      <p class="lead">Software Engineer</p>
+      
+    </div>
+
+    <nav>
+      <ul class="sidebar-nav">
+        <li>
+          <a href="https://alexandrevicenzi.com/">Home</a>
+        </li>
+        <li>
+          <a href="/donate/">Donate</a>
+        </li><li>
+          <a href="/about-me/">About Me</a>
+        </li>
+      </ul>
+    </nav>
+
+    <section class="social-icons">
+      
+      <a href="https://www.linkedin.com/in/alexandrevicenzi" rel="me" title="Linkedin" target="_blank">
+        <i class="fab fa-linkedin" aria-hidden="true"></i>
+      </a>
+      
+      <a href="https://github.com/alexandrevicenzi" rel="me" title="GitHub" target="_blank">
+        <i class="fab fa-github" aria-hidden="true"></i>
+      </a>
+      
+      <a href="https://twitter.com/alxvicenzi" rel="me" title="Twitter" target="_blank">
+        <i class="fab fa-twitter" aria-hidden="true"></i>
+      </a>
+      
+      <a href="https://speakerdeck.com/alexandrevicenzi" rel="me" title="SpeakerDeck" target="_blank">
+        <i class="fab fa-speaker-deck" aria-hidden="true"></i>
+      </a>
+      
+    </section>
+  </div>
+</aside>
+
+
+  <main class="content container">
+  <div class="post">
+  <h1 class="title">Test and document your data pipeline</h1>
+  <span class="tagline">Good programming practices are necessary for every project</span>
+
+  <div class="post-date">
+    <time datetime="2020-10-16T00:00:00Z">Oct 16, 2020</time> &middot; 3 min read
+  </div>
+
+  <div>
+  <figure>
+    <img src="/images/content/bug-t.png"
+         alt="Bug" width="300"/> <figcaption>
+            <p>Image by <a href="https://www.iconfinder.com/Vecteezy">Eezy</a></p>
+        </figcaption>
+</figure>
+
+<p>The article <a href="https://www.kdnuggets.com/2020/08/unit-test-data-pipeline-thank-yourself-later.html"   target="_blank" >Unit Test Your Data Pipeline, You Will Thank Yourself Later</a> on <a href="https://www.kdnuggets.com/"   target="_blank" >KDnuggets</a> caught my attention because we learned this the hard way.</p>
+<p>While working on a given project, we (as a team) thought that testing a data pipeline was difficult, and we always postponed the test of some areas. Later on, we learned the consequences of not testing it.</p>
+<p>Everyone knows that the lack of tests in your code leads to bugs and behavior that no one fully understands. Testing is a small part of the software development process that should be always considered.</p>
+<p>There were two main issues in our project:</p>
+<ul>
+<li>Hidden bugs due to low test coverage</li>
+<li>Lack of understanding of how things worked due to lack of documentation</li>
+</ul>
+<p>Software development is not perfect, bugs will appear from time to time, but you can reduce the chances by testing your code.</p>
+<p>New team members need to start somewhere and current ones need to keep in sync with everything that is going on. The easiest way to accomplish that is by documenting your code, requirements, user stories, and everything in between.</p>
+<p>These issues became more apparent once we found a critical bug. Data went missing in our pipeline, some service was losing data, but we had no clue why or where. The output result was, of course, inaccurate, showing less information than what it should.</p>
+<p>Luckily, we had tracing and logging. We managed to pinpoint a path between two services. The bug was in one of them, exactly where we had to find yet. It took us a lot of time to discover it, but after looking at the code of the most likely service, we found the bug. It was a silly one, some data was being overridden while loaded by an aggregator function.</p>
+<p>The solution was easy I would say, but we learned our lesson in a hard way. There are many areas in a data pipeline that are basic operations that can and should have test coverage.</p>
+<p>This data pipeline made many data transformations with Pandas. In fact, the ML part was tiny if compared to the other services. <a href="https://pandas.pydata.org/"   target="_blank" >Pandas</a> is predictable, given an input and a set of operations it should produce an output. The difficult part was the data used as input. It&rsquo;s usually a lot more than single values. We had to prepare the DataFrames, and this was somewhat challenging, with big payloads to test a simple operation. It&rsquo;s doable, but a bit more complex than your regular unit testing.</p>
+<p>I would also say that you can test your model to some extent as well. Training it with a given dataset and using another one for validation is one form of ensuring that it works as expected, or perhaps testing the accuracy of the model in some cases.</p>
+<p>It does not matter the type of project you are working on, there are basic items that should exist for a project:</p>
+<ul>
+<li>Documentation</li>
+<li>Test coverage</li>
+<li>Logging</li>
+<li>Tracing</li>
+<li>Monitoring</li>
+</ul>
+<p>The benefits of such items are unmeasurable, and everyone in the team will be thankful once a bug emerges.</p>
+
+  </div>
+
+  <div>
+  <ul class="tags">
+  <li>
+    <a href="https://alexandrevicenzi.com/tags/engineering/" class="tag-link">engineering</a>
+  </li>
+  
+  <li>
+    <a href="https://alexandrevicenzi.com/tags/good-practices/" class="tag-link">good-practices</a>
+  </li>
+  
+  <li>
+    <a href="https://alexandrevicenzi.com/tags/data-processing/" class="tag-link">data-processing</a>
+  </li>
+  
+  <li>
+    <a href="https://alexandrevicenzi.com/tags/tests/" class="tag-link">tests</a>
+  </li>
+  
+  <li>
+    <a href="https://alexandrevicenzi.com/tags/documentation/" class="tag-link">documentation</a>
+  </li>
+  </ul>
+</div>
+
+
+  <div class="share-buttons">
+  <a class="twitter-share-button"
+     href="#"
+     title="Share on Twitter"
+     data-url="https://alexandrevicenzi.com/posts/test-and-document-your-data-pipeline/"
+     data-text="Test and document your data pipeline"><i class="fab fa-twitter"></i></a>
+
+  <a class="linkedin-share-button"
+     href="#"
+     title="Share on LinkedIn"
+     data-url="https://alexandrevicenzi.com/posts/test-and-document-your-data-pipeline/"
+     data-text="Test and document your data pipeline"><i class="fab fa-linkedin-in"></i></a>
+
+  <a class="facebook-share-button"
+     href="#"
+     title="Share on Facebook"
+     data-url="https://alexandrevicenzi.com/posts/test-and-document-your-data-pipeline/"
+     data-text="Test and document your data pipeline"><i class="fab fa-facebook"></i></a>
+
+  <a class="telegram-share-button"
+     href="#"
+     title="Share on Telegram"
+     data-url="https://alexandrevicenzi.com/posts/test-and-document-your-data-pipeline/"
+     data-text="Test and document your data pipeline"><i class="fab fa-telegram"></i></a>
+
+  <a class="pinterest-share-button"
+     href="#"
+     title="Share on Pinterest"
+     data-url="https://alexandrevicenzi.com/posts/test-and-document-your-data-pipeline/"
+     data-text="Test and document your data pipeline"><i class="fab fa-pinterest"></i></a>
+</div>
+
+</div>
+
+<h2>Comments</h2>
+<div id="disqus_thread"></div>
+<script type="application/javascript">
+    var disqus_config = function () {
+    
+    
+    
+    };
+    (function() {
+        if (["localhost", "127.0.0.1"].indexOf(window.location.hostname) != -1) {
+            document.getElementById('disqus_thread').innerHTML = 'Disqus comments not available by default when the website is previewed locally.';
+            return;
+        }
+        var d = document, s = d.createElement('script'); s.async = true;
+        s.src = '//' + "alexandrevicenziblog" + '.disqus.com/embed.js';
+        s.setAttribute('data-timestamp', +new Date());
+        (d.head || d.body).appendChild(s);
+    })();
+</script>
+<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+<a href="https://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
+  </main>
+
+  <footer>
+  <div>
+    <p>
+      &copy; Alexandre Vicenzi 2020
+
+      &middot; <a href="https://creativecommons.org/licenses/by-sa/4.0" target="_blank">CC BY-SA 4.0</a>
+
+      
+    </p>
+  </div>
+</footer>
+
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/js/all.min.js"
+          integrity="sha256-MAgcygDRahs+F/Nk5Vz387whB4kSK9NXlDN3w58LLq0="
+          crossorigin="anonymous"></script>
+
+
+  <script src="/js/jquery.min.js"></script>
+  <script src="/js/soho.js"></script>
+
+  
+
+  
+<script type="application/javascript">
+var doNotTrack = false;
+if (!doNotTrack) {
+	window.ga=window.ga||function(){(ga.q=ga.q||[]).push(arguments)};ga.l=+new Date;
+	ga('create', 'UA-55543164-1', 'auto');
+	
+	ga('send', 'pageview');
+}
+</script>
+<script async src='https://www.google-analytics.com/analytics.js'></script>
+
+</body>
+</html>

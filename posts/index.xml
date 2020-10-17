@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Posts on Alexandre Vicenzi</title>
+    <link>https://alexandrevicenzi.com/posts/</link>
+    <description>Recent content in Posts on Alexandre Vicenzi</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en</language>
+    <lastBuildDate>Fri, 16 Oct 2020 00:00:00 +0000</lastBuildDate><atom:link href="https://alexandrevicenzi.com/posts/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Test and document your data pipeline</title>
+      <link>https://alexandrevicenzi.com/posts/test-and-document-your-data-pipeline/</link>
+      <pubDate>Fri, 16 Oct 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://alexandrevicenzi.com/posts/test-and-document-your-data-pipeline/</guid>
+      <description>While working on a given project, we (as a team) thought that testing a data pipeline was difficult, and we always postponed the test of some areas. Later on, we learned the consequences of not testing it.</description>
+    </item>
+    
+    <item>
+      <title>Is my project failing?</title>
+      <link>https://alexandrevicenzi.com/posts/is-my-project-failing/</link>
+      <pubDate>Wed, 05 Aug 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://alexandrevicenzi.com/posts/is-my-project-failing/</guid>
+      <description>In today&amp;rsquo;s article, I&amp;rsquo;m going to talk about things that I&amp;rsquo;ve seen over the years that slowly were contributing to the failure of a project, and how to avoid it.</description>
+    </item>
+    
+    <item>
+      <title>Building an engineering team</title>
+      <link>https://alexandrevicenzi.com/posts/building-an-engineering-team/</link>
+      <pubDate>Tue, 23 Jun 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://alexandrevicenzi.com/posts/building-an-engineering-team/</guid>
+      <description>In today&amp;rsquo;s article, I&amp;rsquo;m going to share my thoughts on how to build a Dev team, what does it take, and how you can tell if you built a good team, as well as what is a good team.</description>
+    </item>
+    
+    <item>
+      <title>2020 Resolutions</title>
+      <link>https://alexandrevicenzi.com/posts/2020-resolutions/</link>
+      <pubDate>Sun, 16 Feb 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://alexandrevicenzi.com/posts/2020-resolutions/</guid>
+      <description>Every year we make some kind of promise, well, this year I made a resolution to create a new blog after a while without writing to any blogs.</description>
+    </item>
+    
+  </channel>
+</rss>

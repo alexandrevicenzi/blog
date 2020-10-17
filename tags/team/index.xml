@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>team on Alexandre Vicenzi</title>
+    <link>https://alexandrevicenzi.com/tags/team/</link>
+    <description>Recent content in team on Alexandre Vicenzi</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en</language>
+    <lastBuildDate>Tue, 23 Jun 2020 00:00:00 +0000</lastBuildDate><atom:link href="https://alexandrevicenzi.com/tags/team/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Building an engineering team</title>
+      <link>https://alexandrevicenzi.com/posts/building-an-engineering-team/</link>
+      <pubDate>Tue, 23 Jun 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://alexandrevicenzi.com/posts/building-an-engineering-team/</guid>
+      <description>In today&amp;rsquo;s article, I&amp;rsquo;m going to share my thoughts on how to build a Dev team, what does it take, and how you can tell if you built a good team, as well as what is a good team.</description>
+    </item>
+    
+  </channel>
+</rss>
