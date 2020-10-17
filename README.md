@@ -2,21 +2,7 @@
 
 Source code for my personal blog.
 
-## Commands
-
-### Start server
-
-```sh
-docker-compose up
-```
-
-Visit [http://localhost:3000/](http://localhost:3000/)
-
-### Build static pages
-
-```sh
-docker-compose exec app sh -c "hugo --cleanDestinationDir -D -d docs/"
-```
+Visit [https://www.alexandrevicenzi.com/](https://www.alexandrevicenzi.com/).
 
 ## License
 
