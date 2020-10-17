@@ -4,15 +4,14 @@ date: 2020-02-09
 slug: donate
 disable_comments: true
 disable_share: true
-description: Donate as a sign of appreciation
-summary: Donations for my contributions are always welcome, but if you can contribute back to the open source community is even better.
+description: Donate as a sign of appreciation for my contributions
 ---
 
-Donations for my contributions are always welcome, but if you can contribute back to the open source community is even better.
+Donations for my contributions are always welcome, but if you can contribute back to the open-source community is even better.
+<!--more-->
+This blog currently has no ads, and I intend to keep this way. Most of the code that I write is under a FOSS license, and my writings are usually licensed under Creative Commons.
 
-This blog currently has no ads and I intend to keep this way. Most of the code that I write is under an FOSS license, and my writings are usually licensed under Creative Commons.
-
-You can find multiple ways to donate below, or you can also pay me a beer, pale lager (Pilsner or Helles) preferably,  if we ever meet one day.
+You can find many ways to donate below, or you can also pay me a beer, pale lager (Pilsner or Helles), if we ever meet one day.
 
 <div class="donations">
   <table class="buttons">
