@@ -1,0 +1,67 @@
+backend:
+  name: github
+  repo: alexandrevicenzi/blog
+  open_authoring: false
+  use_graphql: true
+  squash_merges: true
+
+locale: en
+
+publish_mode: editorial_workflow
+
+media_folder: static/images/content
+public_folder: /images/content
+
+slug:
+  encoding: "ascii"
+  clean_accents: true
+  sanitize_replacement: "-"
+
+collections:
+  - name: posts
+    label: Posts
+    label_singular: Post
+    summary: "{{title}} ({{day}}/{{month}}/{{year}})"
+    folder: "content/posts"
+    slug: "{{fields.slug}}"
+    sortable_fields:
+      - date
+      - title
+    create: true
+    extension: md
+    format: frontmatter
+    editor:
+      preview: true
+    fields:
+      - label: Title
+        name: title
+        widget: string
+      - label: Subtítulo
+        name: tagline
+        widget: string
+        required: false
+      - label: URL
+        name: slug
+        pattern: ["^[a-z0-9-]+$", "Invalid URL"]
+        widget: string
+      - label: Publish Date
+        name: date
+        widget: datetime
+        format: YYYY-MM-DDT08:00
+        time_format: false
+      - label: Summary
+        name: summary
+        widget: text
+        required: false
+      - label: SEO Description
+        name: description
+        widget: text
+        required: false
+      - label: Tags
+        name: tags
+        widget: list
+        min: 0
+        max: 10
+      - label: Article
+        name: body
+        widget: markdown
