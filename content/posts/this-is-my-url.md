@@ -8,6 +8,9 @@ aliases:
 date: 2021-01-29T08:00
 summary: summary
 description: seo dec
+images:
+  - /images/content/blocks.jpg
+  - /images/content/failure.jpg
 tags:
   - tag1
   - tag2
