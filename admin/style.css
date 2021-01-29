@@ -1,0 +1,13 @@
+img {
+  max-width: 100%;
+}
+
+iframe {
+  display: block;
+  margin: auto;
+}
+
+figure,
+figcaption {
+  text-align: center;
+}

@@ -1,6 +1,8 @@
 backend:
   name: github
   repo: alexandrevicenzi/blog
+  branch: master
+  base_url: https://gh-auth-netlify.alxd.workers.dev/
   open_authoring: false
   use_graphql: true
   squash_merges: true
@@ -36,7 +38,7 @@ collections:
       - label: Title
         name: title
         widget: string
-      - label: Subtítulo
+      - label: Tagline
         name: tagline
         widget: string
         required: false
@@ -44,6 +46,15 @@ collections:
         name: slug
         pattern: ["^[a-z0-9-]+$", "Invalid URL"]
         widget: string
+      - label: Aliases
+        name: aliases
+        widget: list
+        required: false
+        field:
+          label: URL
+          name: slug
+          pattern: ["^[a-z0-9-]+$", "Invalid URL"]
+          widget: string
       - label: Publish Date
         name: date
         widget: datetime
@@ -53,15 +64,103 @@ collections:
         name: summary
         widget: text
         required: false
-      - label: SEO Description
+      - label: Description (SEO)
         name: description
         widget: text
         required: false
+      - label: Images
+        name: images
+        widget: list
+        required: false
+        field:
+          label: "Image"
+          name: "image"
+          widget: "image"
       - label: Tags
         name: tags
         widget: list
         min: 0
         max: 10
+      - label: Disable Comments
+        name: disable_comments
+        widget: boolean
+        required: false
+      - label: Disable Share
+        name: disable_share
+        widget: boolean
+        required: false
+      - label: Article
+        name: body
+        widget: markdown
+  - name: pages
+    label: Pages
+    label_singular: Page
+    summary: "{{title}}"
+    folder: "content"
+    slug: "{{fields.slug}}"
+    sortable_fields:
+      - date
+      - title
+    create: true
+    extension: md
+    format: frontmatter
+    editor:
+      preview: true
+    fields:
+      - label: Title
+        name: title
+        widget: string
+      - label: Tagline
+        name: tagline
+        widget: string
+        required: false
+      - label: URL
+        name: slug
+        pattern: ["^[a-z0-9-]+$", "Invalid URL"]
+        widget: string
+      - label: Aliases
+        name: aliases
+        widget: list
+        required: false
+        field:
+          label: URL
+          name: slug
+          pattern: ["^[a-z0-9-]+$", "Invalid URL"]
+          widget: string
+      - label: Publish Date
+        name: date
+        widget: datetime
+        format: YYYY-MM-DDT08:00
+        time_format: false
+      - label: Summary
+        name: summary
+        widget: text
+        required: false
+      - label: Description (SEO)
+        name: description
+        widget: text
+        required: false
+      - label: Images
+        name: images
+        widget: list
+        required: false
+        field:
+          label: "Image"
+          name: "image"
+          widget: "image"
+      - label: Tags
+        name: tags
+        widget: list
+        min: 0
+        max: 10
+      - label: Disable Comments
+        name: disable_comments
+        widget: boolean
+        required: false
+      - label: Disable Share
+        name: disable_share
+        widget: boolean
+        required: false
       - label: Article
         name: body
         widget: markdown
