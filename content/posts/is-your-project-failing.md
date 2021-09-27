@@ -1,7 +1,9 @@
 ---
-title: Is my project failing?
+title: Is your project failing?
 date: 2020-08-05
-slug: is-my-project-failing
+slug: is-your-project-failing
+aliases:
+  - is-my-project-failing
 description: Failure can come in many forms and shapes, but there are usually signs along the way that will help you fix it before being too late.
 summary: In today's article, I'm going to talk about what I've seen over the years. Things that slowly contributed to the failure of a project and how to avoid it.
 images:
